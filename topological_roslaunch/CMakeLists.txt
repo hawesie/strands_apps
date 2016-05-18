@@ -153,6 +153,10 @@ include_directories(
 #   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 # )
 
+catkin_install_python(PROGRAMS scripts/tear_down_at_nodes.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
+
+
 ## Mark executables and/or libraries for installation
 # install(TARGETS topological_roslaunch topological_roslaunch_node
 #   ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
